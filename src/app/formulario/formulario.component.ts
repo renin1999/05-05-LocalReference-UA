@@ -18,7 +18,6 @@ export class FormularioComponent  {
 //servicios se inyecta.
   constructor( private personaService: PersonaService) { 
     this.personaService.informacion.subscribe((indice:number) => { alert("el index es"+indice) });
-    
   }
   agregarPersona(){
     let persona1 = new Persona(this.nombreInput.nativeElement.value, this.apellidoInput.nativeElement.value);
